@@ -10,6 +10,14 @@
 #define PORT 8080
 #define SA struct sockaddr
 
+/**
+ * @brief Credits
+ * This server side implementation was found in Geeks For Geeks, we used this implementation and
+ * adapt it to our needs by setting the exit condition in func(connfd) and creating a loop that 
+ * includes the accept command in order to allow the client to connect and disconnect multiple times 
+ * @param connfd The file descriptor of the connection will the client
+ */
+
 // Function designed for chat between client and server.
 void func(int connfd)
 {
@@ -28,7 +36,10 @@ void func(int connfd)
 			continue;
 		}
 
-		// if msg contains "Exit" then server exit and chat ended.
+		/**
+		 * @brief Exit
+		 * If the server will receive "LOCAL", it will close the socket that connect it to the client
+		 */
 		if (strncmp("LOCAL", buff, 5) == 0)
 		{
 			printf("Client disconnected...\n");
@@ -36,13 +47,13 @@ void func(int connfd)
 			break;
 		}
 
+		//Print the incoming message from the buffer
 		printf("%s", buff);
 
 		
-
+		//Clear the buffer
 		bzero(buff, MAX);
 		n = 0;
-
 	}
 	close(connfd);
 }
@@ -88,6 +99,8 @@ int main()
 		printf("Server listening..\n");
 	len = sizeof(cli);
 
+	//Loop through the accept command in order to allow
+	//the client to connect and disconnect multiple times
 	while(1){
 		// Accept the data packet from client and verification
 		connfd = accept(sockfd, (SA *)&cli, &len);

@@ -32,6 +32,6 @@ int caseCopy(char* token);
 int caseDelete(char *token);
 int caseTCP(char* token);
 int caseLocal();
-void resetArguments();
-void setArguments();
+char** setArguments();
+void ArgumentHandler(int argc, char **argv);
 #endif
