@@ -16,3 +16,7 @@ Enter "make clean" in the terminal
 
 ## Answers:
 Answers for the Questions are inside the documentation of the code in the needed place
+
+## Examples of the running code:
+### Running the code
+![RUNNING](Media/RUNNING.png)
