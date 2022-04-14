@@ -19,4 +19,36 @@ Answers for the Questions are inside the documentation of the code in the needed
 
 ## Examples of the running code:
 ### Running the code
-![RUNNING](Media/RUNNING.png)
+![RUNNING](Media/Running.png)
+We can also see the promt "I can do this all day", a quote from the first Captain America movie, and the path.
+
+### Arguments handling
+![args](Media/ARGS.png)
+
+### Echo command handling
+![ECHO](Media/ECHO.png)
+
+### Handling TCP PORT command
+#### Connection accepted 
+![tcp1](https://github.com/Unusual55/OS_Ex1/blob/main/Media/TCP%20connection%20accepted.png?raw=true)
+
+#### Using ECHO command with connection open
+![tcp2](https://github.com/Unusual55/OS_Ex1/blob/main/Media/TCP%20ECHO.png)
+
+### Handling Local command
+![local](https://github.com/Unusual55/OS_Ex1/blob/main/Media/LOCAL.png)
+
+### Handling DIR command
+![dir](Media/DIR.png)
+
+### Handling CD command
+![cd](Media/CD.png)
+
+### Handling COPY  and DELETE commands
+![copy](https://github.com/Unusual55/OS_Ex1/blob/main/Media/COPY%20AND%20DELETE.png)
+
+### Handling any other commands
+![other](https://github.com/Unusual55/OS_Ex1/blob/main/Media/EXEC%20COMMANDS.png)
+
+### Handling EXIT command
+![exit](Media/EXIT.png)
