@@ -1,5 +1,5 @@
 # Operational Systems Assignment 1 - Linux Shell
-By Ofri Tavor 208601401 and Almog David 207749441
+By Ofri Tavor and Almog David
 
 ## Credits:
 We used the implementation of TCP server and client we took from Geeks For Geeks and adapt it
